@@ -98,7 +98,7 @@ Can be t, nil or ask"
 (defun sxhkd-mode-indentation-length ()
   "Determine indentation length of current line."
   (save-excursion
-    (if (zerop (current-line))
+    (if (zerop (array-current-line))
         0
       ;; go up, until end of comment or beginning of buffer
       (beginning-of-line 0)
